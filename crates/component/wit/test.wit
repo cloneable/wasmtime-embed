@@ -1,0 +1,13 @@
+package example:wasm-embedding@0.0.0
+
+interface my-host {
+    log: func(msg: string)
+}
+
+world my-component {
+    import my-host
+
+    export demo: interface {
+        exchange-strings: func(msg: string) -> string
+    }
+}

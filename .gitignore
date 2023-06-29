@@ -1,0 +1,6 @@
+.*
+!.*ignore
+!.cargo/
+
+/*.wasm
+/target/
