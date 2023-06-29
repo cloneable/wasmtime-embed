@@ -1,0 +1,10 @@
+[package]
+name = "modulehost"
+version = "0.0.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1"
+wasmtime = { version = "10", default-features = false, features = [
+  "cranelift",
+]}
